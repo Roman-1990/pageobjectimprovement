@@ -6,6 +6,7 @@ import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class RandomUtils {
+    //Образец рандомной белеберды
     public static String getRandomString(int length) {
         String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         StringBuilder result = new StringBuilder();
@@ -16,7 +17,7 @@ public class RandomUtils {
         }
         return result.toString();
     }
-
+    //ввод рандомных данных по фрормам
     public static String getRandomGender() {
         List<String> list = Arrays.asList("Female", "Male", "Other");
         return getRandomElementFromList(list);

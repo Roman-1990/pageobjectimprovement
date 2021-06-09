@@ -1,9 +1,7 @@
 plugins {
-    id 'java-library'
+    id 'java'
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
@@ -15,15 +13,14 @@ compileTestJava {
 
 
 dependencies {
-    implementation 'junit:junit:4.13.1'
+    implementation 'junit:junit:5.7.1'
     testImplementation("com.codeborne:selenide:5.20.3",
             "org.junit.jupiter:junit-jupiter-api:5.7.2",
-            "org.slf4j:slf4j-api:1.7.30",
-            "org.slf4j:slf4j-simple:1.7.30",
             "com.github.javafaker:javafaker:1.0.2"
     )
     testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.7.2',
-            "org.slf4j:slf4j-simple:1.7.30")
+            "org.slf4j:slf4j-simple:1.7.30",
+            "org.slf4j:slf4j-api:1.7.30")
 }
 
 
